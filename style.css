@@ -1,0 +1,58 @@
+body {
+  background-color: #f9f9f9;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: #fa85dd;
+}
+
+section {
+  text-align: center;
+}
+
+.top-image {
+  width: 15%;
+}
+.footer-image {
+  width: 20px;
+}
+
+footer {
+  padding-top: 100px;
+  text-align: center;
+}
+
+button {
+  border-width: none;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 20px;
+  height: 100px;
+  width: 200px;
+
+  border-radius: 50%;
+  animation-name: button-moves;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+button:hover {
+  animation-name: button-moves;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-image: url("https://media1.giphy.com/media/URZcG7uLd9h4s/200w.webp?cid=ecf05e47keifh48b5ap5xagt7641r2dnx3aq1g4f0my60b3d&rid=200w.webp&ct=g");
+}
+
+@keyframes button-moves {
+  0% {
+    background-color: #fa85dd;
+    color: white;
+  }
+  50% {
+    border-radius: 0%;
+    background-color: #f9f9f9;
+    color: #fa85dd;
+  }
+  100% {
+    background-color: #fa85dd;
+    color: white;
+  }
+}
